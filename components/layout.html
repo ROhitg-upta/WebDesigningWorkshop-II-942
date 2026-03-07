@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container {
+    /* width: 100%;
+    margin: 0 auto; */
+    /* background-color: aqua; */
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightpink;
+  }
+  .col-2 {
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+    background-color: lightgreen;
+  }
+  .col-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    background-color: lightblue;
+  }
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+      background-color: lightyellow;
+  }
+  .col-8 {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    background-color: lightgray;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class = "row"> 
+      <div class = "col-sm-2">
+        <p>This is the left column.</p>
+      </div>
+      <div class = "col-4">
+        <p>This is the right column.</p>
+        <div class = "row">
+          <div class = "col-6">
+            <p>This is the left column of the nested row.</p>
+          </div>
+          <div class = "col-8">
+            <p>This is the right column of the nested row.</p>
+          </div>
+      </div>
+    </div>
+  
+  
+</body>
+</html>
+
+<!-- excercise -- https://appbrewery.github.io/bootstrap-layout/ -->
