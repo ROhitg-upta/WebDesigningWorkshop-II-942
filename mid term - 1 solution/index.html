@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Odd Checker</title>
+</head>
+<body>
+
+    <h2>Enter a Number</h2>
+    <input type="number" id="num">
+    <button onclick="checkNumber()">Check</button>
+
+    <h3 id="result"></h3>
+    <h3>Numbers:</h3>
+    <p id="numbers"></p>
+
+    <script>
+        function checkNumber() {
+            let n = document.getElementById("num").value;
+            n = Number(n);
+
+            // Even or Odd Check
+            if (n % 2 === 0) {
+                document.getElementById("result").innerHTML = "Even Number";
+            } else {
+                document.getElementById("result").innerHTML = "Odd Number";
+            }
+
+            // Loop from 1 to n
+            let output = "";
+            for (let i = 1; i <= n; i++) {
+                output += i + " ";
+            }
+
+            document.getElementById("numbers").innerHTML = output;
+        }
+    </script>
+
+</body>
+</html>
